@@ -1,0 +1,23 @@
+# vsim -l alu_tb.log work.alu_tb -do "run -all;exit" -sv_seed random 
+# Start time: 17:30:41 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.register
+# Loading work.addsub
+# Sv_Seed = 3314825334
+# run -all
+# @7100 [ADD_PASS] a: 211a, b: b884, result: d99e
+# @13100 [ADD_PASS] a: a023, b: 444b, result: e46e
+# @19100 [ADD_PASS] a: cf05, b: 6102, result: 3007
+# @25100 [ADD_PASS] a: 2628, b: 2d6a, result: 5392
+# @31100 [ADD_PASS] a: 7759, b: c6b9, result: 3e12
+# @37100 [SUB_PASS] a: fb4, b: b6f, result: 445
+# @43100 [SUB_PASS] a: 47e9, b: 12d1, result: 3518
+# @49100 [SUB_PASS] a: 5976, b: 92e8, result: c68e
+# @55100 [SUB_PASS] a: ca88, b: fb29, result: cf5f
+# @61100 [SUB_PASS] a: 4248, b: 8769, result: badf
+# ** Note: $finish    : ./sv/alu_tb.sv(68)
+#    Time: 611 ns  Iteration: 0  Instance: /alu_tb
+# End time: 17:30:41 on Oct 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

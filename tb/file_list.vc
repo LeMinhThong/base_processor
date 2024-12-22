@@ -1,0 +1,28 @@
+// v
+../v/counter.v
+../v/register.v
+../v/multiplexers.v
+../v/alu.v
+../v/control_unit.v
+../v/cpu.v
+
+// macro
+./sv/macro_file.sv
+
+// tb
+./sv/counter_tb.sv
+./sv/register_tb.sv
+./sv/multiplexers_tb.sv
+./sv/alu_tb.sv
+./sv/control_unit_tb.sv
+
+./sv/vip.sv
+./sv/cpu_tb.sv
+
+// testcase
+../testcase/mvi_test.sv
+../testcase/mv_test.sv
+../testcase/add_test.sv
+../testcase/sub_test.sv
+../testcase/clear_test.sv
+../testcase/run_test.sv

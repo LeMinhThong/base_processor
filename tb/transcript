@@ -1,0 +1,516 @@
+# Reading pref.tcl
+vsim work.alu_tb
+# vsim work.alu_tb 
+# Start time: 17:29:39 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.register
+# Loading work.addsub
+add wave -position insertpoint sim:/alu_tb/alu0/*
+run -all
+# @7100 [ADD_PASS] a: 37e7, b: 4a7c, result: 8263
+# @13100 [ADD_PASS] a: 679c, b: ba1c, result: 21b8
+# @19100 [ADD_PASS] a: fde8, b: 23a7, result: 218f
+# @25100 [ADD_PASS] a: 4716, b: e1c4, result: 28da
+# @31100 [ADD_PASS] a: f300, b: 3d59, result: 3059
+# @37100 [SUB_PASS] a: 4df8, b: 4bfb, result: 1fd
+# @43100 [SUB_PASS] a: b311, b: 74a2, result: 3e6f
+# @49100 [SUB_PASS] a: 4ffc, b: 70a5, result: df57
+# @55100 [SUB_PASS] a: 88de, b: 1196, result: 7748
+# @61100 [SUB_PASS] a: 5c90, b: 9d17, result: bf79
+# ** Note: $finish    : ./sv/alu_tb.sv(68)
+#    Time: 611 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at ./sv/alu_tb.sv line 68
+quit -sim
+# End time: 17:52:12 on Oct 13,2024, Elapsed time: 0:22:33
+# Errors: 0, Warnings: 0
+vsim work.control_unit_tb
+# vsim work.control_unit_tb 
+# Start time: 17:52:14 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.control_unit_tb
+# Loading work.control_unit
+add wave -position insertpoint sim:/control_unit_tb/cu/*
+run -all
+# ** Note: $finish    : ./sv/control_unit_tb.sv(84)
+#    Time: 200 ns  Iteration: 0  Instance: /control_unit_tb
+# 1
+# Break in Module control_unit_tb at ./sv/control_unit_tb.sv line 84
+quit -sim
+# End time: 18:05:05 on Oct 13,2024, Elapsed time: 0:12:51
+# Errors: 0, Warnings: 0
+vsim work.mvi_test
+# vsim work.mvi_test 
+# Start time: 18:05:11 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.mvi_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/mvi_test/tb/cpu0/*
+run -all
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mvi r0 f0
+# mvi r1 f1
+# mvi r2 f2
+# mvi r3 f3
+# mvi r4 f4
+# mvi r5 f5
+# mvi r6 f6
+# mvi r7 f7
+# ** Note: $finish    : ../testcase/mvi_test.sv(44)
+#    Time: 1430 ns  Iteration: 1  Instance: /mvi_test
+# 1
+# Break in Module mvi_test at ../testcase/mvi_test.sv line 44
+quit -sim
+# End time: 18:10:39 on Oct 13,2024, Elapsed time: 0:05:28
+# Errors: 0, Warnings: 0
+vsim work.mv_test
+# vsim work.mv_test 
+# Start time: 18:10:44 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.mv_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/mv_test/tb/cpu0/*
+run -all
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r0
+# mv r1 r0
+# mv r2 r0
+# mv r3 r0
+# mv r4 r0
+# mv r5 r0
+# mv r6 r0
+# mv r7 r0
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r1
+# mv r1 r1
+# mv r2 r1
+# mv r3 r1
+# mv r4 r1
+# mv r5 r1
+# mv r6 r1
+# mv r7 r1
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r2
+# mv r1 r2
+# mv r2 r2
+# mv r3 r2
+# mv r4 r2
+# mv r5 r2
+# mv r6 r2
+# mv r7 r2
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r3
+# mv r1 r3
+# mv r2 r3
+# mv r3 r3
+# mv r4 r3
+# mv r5 r3
+# mv r6 r3
+# mv r7 r3
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r4
+# mv r1 r4
+# mv r2 r4
+# mv r3 r4
+# mv r4 r4
+# mv r5 r4
+# mv r6 r4
+# mv r7 r4
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r5
+# mv r1 r5
+# mv r2 r5
+# mv r3 r5
+# mv r4 r5
+# mv r5 r5
+# mv r6 r5
+# mv r7 r5
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r6
+# mv r1 r6
+# mv r2 r6
+# mv r3 r6
+# mv r4 r6
+# mv r5 r6
+# mv r6 r6
+# mv r7 r6
+# init reg: mvi rx x
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# mv r0 r7
+# mv r1 r7
+# mv r2 r7
+# mv r3 r7
+# mv r4 r7
+# mv r5 r7
+# mv r6 r7
+# mv r7 r7
+# ** Note: $finish    : ../testcase/mv_test.sv(34)
+#    Time: 5270 ns  Iteration: 1  Instance: /mv_test
+# 1
+# Break in Module mv_test at ../testcase/mv_test.sv line 34
+quit -sim
+# End time: 18:14:19 on Oct 13,2024, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 0
+vsim work.add_test
+# vsim work.add_test 
+# Start time: 18:14:24 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.add_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/add_test/tb/cpu0/*
+run -all
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# init reg: mvi rx x
+# add r0 r0
+# add r0 r1
+# add r0 r2
+# add r0 r3
+# add r0 r4
+# add r0 r5
+# add r0 r6
+# add r0 r7
+# init reg: mvi rx x
+# add r1 r0
+# add r1 r1
+# add r1 r2
+# add r1 r3
+# add r1 r4
+# add r1 r5
+# add r1 r6
+# add r1 r7
+# init reg: mvi rx x
+# add r2 r0
+# add r2 r1
+# add r2 r2
+# add r2 r3
+# add r2 r4
+# add r2 r5
+# add r2 r6
+# add r2 r7
+# init reg: mvi rx x
+# add r3 r0
+# add r3 r1
+# add r3 r2
+# add r3 r3
+# add r3 r4
+# add r3 r5
+# add r3 r6
+# add r3 r7
+# init reg: mvi rx x
+# add r4 r0
+# add r4 r1
+# add r4 r2
+# add r4 r3
+# add r4 r4
+# add r4 r5
+# add r4 r6
+# add r4 r7
+# init reg: mvi rx x
+# add r5 r0
+# add r5 r1
+# add r5 r2
+# add r5 r3
+# add r5 r4
+# add r5 r5
+# add r5 r6
+# add r5 r7
+# init reg: mvi rx x
+# add r6 r0
+# add r6 r1
+# add r6 r2
+# add r6 r3
+# add r6 r4
+# add r6 r5
+# add r6 r6
+# add r6 r7
+# init reg: mvi rx x
+# add r7 r0
+# add r7 r1
+# add r7 r2
+# add r7 r3
+# add r7 r4
+# add r7 r5
+# add r7 r6
+# add r7 r7
+# ** Note: $finish    : ../testcase/add_test.sv(36)
+#    Time: 5910 ns  Iteration: 1  Instance: /add_test
+# 1
+# Break in Module add_test at ../testcase/add_test.sv line 36
+quit -sim
+# End time: 18:16:34 on Oct 13,2024, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 0
+vsim work.sub_test
+# vsim work.sub_test 
+# Start time: 18:16:38 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.sub_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/sub_test/tb/cpu0/*
+run -all
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# init reg: mvi rx x
+# sub r0 r1
+# sub r0 r2
+# sub r0 r3
+# sub r0 r4
+# sub r0 r5
+# sub r0 r6
+# sub r0 r7
+# init reg: mvi rx x
+# sub r1 r0
+# sub r1 r2
+# sub r1 r3
+# sub r1 r4
+# sub r1 r5
+# sub r1 r6
+# sub r1 r7
+# init reg: mvi rx x
+# sub r2 r0
+# sub r2 r1
+# sub r2 r3
+# sub r2 r4
+# sub r2 r5
+# sub r2 r6
+# sub r2 r7
+# init reg: mvi rx x
+# sub r3 r0
+# sub r3 r1
+# sub r3 r2
+# sub r3 r4
+# sub r3 r5
+# sub r3 r6
+# sub r3 r7
+# init reg: mvi rx x
+# sub r4 r0
+# sub r4 r1
+# sub r4 r2
+# sub r4 r3
+# sub r4 r5
+# sub r4 r6
+# sub r4 r7
+# init reg: mvi rx x
+# sub r5 r0
+# sub r5 r1
+# sub r5 r2
+# sub r5 r3
+# sub r5 r4
+# sub r5 r6
+# sub r5 r7
+# init reg: mvi rx x
+# sub r6 r0
+# sub r6 r1
+# sub r6 r2
+# sub r6 r3
+# sub r6 r4
+# sub r6 r5
+# sub r6 r7
+# init reg: mvi rx x
+# sub r7 r0
+# sub r7 r1
+# sub r7 r2
+# sub r7 r3
+# sub r7 r4
+# sub r7 r5
+# sub r7 r6
+# ** Note: $finish    : ../testcase/sub_test.sv(47)
+#    Time: 6550 ns  Iteration: 1  Instance: /sub_test
+# 1
+# Break in Module sub_test at ../testcase/sub_test.sv line 47
+quit -sim
+# End time: 18:20:12 on Oct 13,2024, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 0
+vsim work.clear_test
+# vsim work.clear_test 
+# Start time: 18:20:16 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.clear_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/clear_test/tb/cpu0/*
+quit -sim
+# End time: 18:21:23 on Oct 13,2024, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 0
+vsim work.clear_test
+# vsim work.clear_test 
+# Start time: 18:21:28 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.clear_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/clear_test/tb/cpu0/*
+run -all
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# ** Note: $finish    : ../testcase/clear_test.sv(79)
+#    Time: 970 ns  Iteration: 1  Instance: /clear_test
+# 1
+# Break in Module clear_test at ../testcase/clear_test.sv line 79
+quit -sim
+# End time: 18:23:09 on Oct 13,2024, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 0
+vsim work.run_test
+# vsim work.run_test 
+# Start time: 18:23:16 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.run_test
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.register
+# Loading work.alu
+# Loading work.addsub
+# Loading work.multiplexers
+# Loading work.control_unit
+# Loading work.counter
+# Loading work.vip
+add wave -position insertpoint sim:/run_test/tb/cpu0/*
+run -all
+# mvi r0 0
+# mvi r1 1
+# mvi r2 2
+# mvi r3 3
+# mvi r4 4
+# mvi r5 5
+# mvi r6 6
+# mvi r7 7
+# ** Note: $finish    : ../testcase/run_test.sv(78)
+#    Time: 990 ns  Iteration: 1  Instance: /run_test
+# 1
+# Break in Module run_test at ../testcase/run_test.sv line 78
