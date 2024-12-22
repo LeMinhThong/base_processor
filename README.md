@@ -1,4 +1,4 @@
-# base_processor
+# basic_processor
 - 16-bit instruction set.
 - Opcode: move, move immediate, addition, subtraction.
 - Structure
